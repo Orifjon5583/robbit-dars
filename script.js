@@ -1,0 +1,1 @@
+function malumot() { fetch("https://api.open-meteo.com/v1/forecast?latitude=41.31&longitude=69.28&current=temperature_2m") .then(response => response.json()) .then(data => { document.getElementById("harorat").innerHTML = data.current.temperature_2m + " °C"; }); }
